@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/programTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/programTitleTV"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutInputOperand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8pt"
+        android:layout_marginRight="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/programTitleTV"
+        app:layout_constraintVertical_bias="0.1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/firstOperandET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2pt"
+            android:layout_marginLeft="2pt"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/secondOperandET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2pt"
+            android:layout_marginLeft="2pt"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutChoiceOperator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8pt"
+        android:layout_marginRight="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutInputOperand"
+        app:layout_constraintVertical_bias="0.1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/operatorPlusBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/operatorPlusBTN"
+            android:textSize="22sp"
+            android:layout_marginRight="2pt"
+            android:layout_marginLeft="2pt"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/operatorMinusBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/operatorMinusBTN"
+            android:textSize="22sp"
+            android:layout_marginRight="2pt"
+            android:layout_marginLeft="2pt"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/operatorMultiplyBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/operatorMultiplyBTN"
+            android:textSize="22sp"
+            android:layout_marginRight="2pt"
+            android:layout_marginLeft="2pt"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/operatorDivideBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/operatorDivideBTN"
+            android:textSize="22sp"
+            android:layout_marginRight="2pt"
+            android:layout_marginLeft="2pt"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/resultTV"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutChoiceOperator"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutResetExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8pt"
+        android:layout_marginRight="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultTV"
+        app:layout_constraintVertical_bias="0.2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/resetBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resetBTN"
+            android:textSize="22sp"
+            android:layout_marginRight="2pt"
+            android:layout_marginLeft="2pt"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/exitBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exitBTN"
+            android:textSize="22sp"
+            android:layout_marginRight="2pt"
+            android:layout_marginLeft="2pt"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="resultTV">Результат:</string>
+    <string name="operatorDivideBTN">÷</string>
+    <string name="operatorMultiplyBTN">×</string>
+    <string name="operatorMinusBTN">-</string>
+    <string name="operatorPlusBTN">+</string>
+    <string name="programTitleTV">Калькулятор</string>
+    <string name="resetBTN">RESET</string>
+    <string name="exitBTN">EXIT</string>
+</resources>
