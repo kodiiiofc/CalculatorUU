@@ -5,7 +5,8 @@
     <string name="operatorMultiplyBTN">×</string>
     <string name="operatorMinusBTN">-</string>
     <string name="operatorPlusBTN">+</string>
-    <string name="programTitleTV">Калькулятор</string>
-    <string name="resetBTN">RESET</string>
-    <string name="exitBTN">EXIT</string>
+
+    <string name="exit">Exit</string>
+    <string name="reset">Reset</string>
+
 </resources>
